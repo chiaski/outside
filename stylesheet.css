@@ -12,7 +12,7 @@
 }
 
 #canvas span{
-  
+  position: absolute;
 }
 
 #controls{
@@ -40,11 +40,13 @@
   transform: translateX(-25%);
   animation: sun-bounce infinite 7s;
 }
-
-
 .cloud{
   padding: .25em;
   position: absolute;
+}
+
+.s80{
+  animation: screen-away infinite 80s;
 }
 
 ._c1{
@@ -67,7 +69,7 @@
 }
 
 .bird-field{
-  position: relative;
+  
 }
 
 .bird-flock {
@@ -95,6 +97,16 @@
 ._b3 {
   animation-direction: alternate-reverse;
   animation: b1 infinite 3s;
+}
+
+
+._b4 {
+  animation: b1 infinite 10s, screen-away  infinite 90s;
+}
+
+
+._b5 {
+  animation: b2 infinite  3s, screen-away infinite 80s;
 }
 
 
