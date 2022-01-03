@@ -1,0 +1,195 @@
+#canvas {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+#canvas span{
+  
+}
+
+#controls{
+  
+}
+
+#g{
+  position: relative;
+  height: 90vh;
+  border: 2px solid #000;
+}
+
+.d {
+
+  font-family: monospace;
+  white-space: pre;
+}
+
+/* INDIVIDUAL OBJECTS */
+
+.sun {
+  position: absolute;
+  top: 30%;
+  left: 48%;
+  transform: translateX(-25%);
+  animation: sun-bounce infinite 7s;
+}
+
+
+.cloud{
+  padding: .25em;
+  position: absolute;
+}
+
+._c1{
+  animation: b2 infinite 12s, screen-away infinite 120s;
+}
+
+
+._c2{
+  animation: b1 infinite 12s, screen-away infinite 80s;
+}
+
+._c3{
+  animation: b3 infinite 12s, screen-away infinite 50s;
+  
+}
+
+
+._c3{
+  animation: b4 infinite 12s, screen-away infinite 50s;
+}
+
+.bird-field{
+  position: relative;
+}
+
+.bird-flock {
+  position: relative;
+  top: 0;
+  left:24%;
+  animation: screen-away infinite 80s, b2 6s; 
+}
+
+.bird {
+  padding: .5em;
+  margin: .3em;
+  position: absolute;
+}
+
+._b1 {
+  animation: b1 infinite 7s;
+}
+
+._b2 {
+  animation: b2 infinite 12s;
+}
+
+
+._b3 {
+  animation-direction: alternate-reverse;
+  animation: b1 infinite 3s;
+}
+
+
+
+@keyframes screen-away {
+  from {
+    left: -20vw;
+  }
+  
+  to {
+    left: 120vw;
+  }
+}
+
+
+@keyframes sun-bounce {
+  from {
+    margin-top: 2em;
+  }
+
+  75% {
+    margin-top: -1em;
+  }
+
+  to {
+    margin-top: 2em;
+  }
+}
+
+
+@keyframes b1 {
+  from {
+    margin-top: .2em;
+    margin-left: .2em;
+  }
+
+  75% {
+    margin-top: -.3em;
+  }
+
+  to {
+    margin-top: .3em;
+  }
+}
+
+
+
+@keyframes b2 {
+  from {
+    margin-top: -.6em;
+    margin-right: -1em;
+  }
+
+  75% {
+    margin-top: -.2em;
+  }
+
+  to {
+    margin-top: .3em;
+    margin-right: .5em;
+  }
+}
+
+
+@keyframes b3 {
+  from {
+    margin-top: 1em;
+    margin-right: 1.2em;
+  }
+
+  75% {
+    margin-top: -.2em;
+    margin-right: .5em;
+  }
+
+  to {
+    margin-top: .8em;
+    margin-right: 1em;
+  }
+}
+
+
+@keyframes b4 {
+  from {
+    margin-top: .6em;
+    margin-right: .2em;
+  }
+
+  75% {
+    margin-top: -1em;
+    margin-right: .5em;
+  }
+
+  to {
+    margin-top: .2em;
+    margin-right: .4em;
+  }
+}
